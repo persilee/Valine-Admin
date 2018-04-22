@@ -51,7 +51,7 @@ exports.send = (currentComment, parentComment) => {
         '    <h2 style="border-bottom:1px solid #DDD;font-size:14px;font-weight:normal;padding:13px 0 10px 8px;"><span style="color: #12ADDB;font-weight:bold;">&gt; </span>您（' +
         parentComment.get('nick') +
         '）在 <a href="' + process.env.SITE_URL + '">《' + process.env.SITE_NAME + '》</a> 上的评论有了新的回复</h2>' +
-        '< div style = "padding:0 12px 0 12px;margin-top:18px" > < p > < strong > ' +
+        '<div style="padding:0 12px 0 12px;margin-top:18px">' +
         '<p>你的评论：</p>' +
         '<div style = "background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;" > ' +
         parentComment.get('comment') +
