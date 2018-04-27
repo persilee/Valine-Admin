@@ -53,29 +53,29 @@ exports.send = (currentComment, parentComment) => {
         '<img style="width:100%;z-index: 666;" src="https://lishaoy.net/images/boy.jpg" />' +
         '</a>' +
         '</span>' +
-        '<div style="padding: 5px 20px;">' +
+        '<di style="padding: 5px 20px;">' +
         '<p style="position: relative; color: white; float: left; z-index: 999; background: orange; padding: 5px 30px; margin: -25px auto 0 ; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)">' +
-        '<span>Dear' + currentComment.get('nick') +
+        '<span>Dear &nbsp;' + parentComment.get('nick') +
         '</span>' +
         '</p>' +
-        '<span><br / ></span>' +
+        '<span></br></span>' +
         '<h3> <span > 您有一条来自' +
         '<a style="text-decoration: none;color: orange" target="_blank" href="' +
         process.env.SITE_URL +
-        '">' + parentComment.get('nick') + '</a>的回复</span>' +
+        '">' + currentComment.get('nick') + '</a>的回复</span>' +
         '</h3>' +
-        '<span>< br /></span >' +
+        '<span></br></span >' +
         '<p style="font-size: 14px;">< span > 您在《' +
         process.env.SITE_NAME +
         '》上发表的评论：</span></p >' +
-        '<p style="border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px 0px;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
+        '<div style="border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px 0px;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
         parentComment.get('comment') +
-        '</p>' +
+        '</div>' +
         '<p style="font-size: 14px;">' +
-        '<span>' + currentComment.get('nick') + '给您的回复如下：</span></p>' +
-        '<p style="border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px 0px;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
+        '<span>' + currentComment.get('nick') + '&nbsp; 给您的回复如下：</span></p>' +
+        '<div style="border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px 0px;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
         currentComment.get('comment') +
-        '</p>' +
+        '</div>' +
         '<p style="font-size: 14px;"><span><a style="text-decoration: none;color: orange" target="_blank" href="' +
         process.env.SITE_URL +
         '">persilee\'s blog</a>双手呈上~</span ></p>' +
