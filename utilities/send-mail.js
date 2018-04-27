@@ -55,16 +55,14 @@ exports.send = (currentComment, parentComment) => {
         '</span>' +
         '<di style="padding: 5px 20px;">' +
         '<p style="position: relative; color: white; float: left; z-index: 999; background: orange; padding: 5px 30px; margin: -25px auto 0 ; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)">' +
-        '<span>Dear &nbsp;' + parentComment.get('nick') +
+        '<span>Dear  ' + parentComment.get('nick') +
         '</span>' +
         '</p>' +
-        '<span></br></span>' +
         '<h3> <span > 您有一条来自' +
         '<a style="text-decoration: none;color: orange" target="_blank" href="' +
         process.env.SITE_URL +
         '">' + currentComment.get('nick') + '</a>的回复</span>' +
         '</h3>' +
-        '<span></br></span >' +
         '<p style="font-size: 14px;">< span > 您在《' +
         process.env.SITE_NAME +
         '》上发表的评论：</span></p >' +
@@ -72,7 +70,7 @@ exports.send = (currentComment, parentComment) => {
         parentComment.get('comment') +
         '</div>' +
         '<p style="font-size: 14px;">' +
-        '<span>' + currentComment.get('nick') + '&nbsp; 给您的回复如下：</span></p>' +
+        '<span>' + currentComment.get('nick') + '  给您的回复如下：</span></p>' +
         '<div style="border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px 0px;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
         currentComment.get('comment') +
         '</div>' +
