@@ -50,34 +50,34 @@ exports.send = (currentComment, parentComment) => {
     let emailContent = '<div style="background: white; width: 80%; margin: auto auto; border-radius: 5px; border:orange 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
         '<span>' +
         '<a href="#">' +
-        '<img style="width:100%;z-index: 666;" src="https://i.loli.net/2018/03/19/5aafd2e0cfc2c.jpg" />' +
+        '<img style="width:100%;z-index: 666;" src="https://lishaoy.net/images/boy.jpg" />' +
         '</a>' +
         '</span>' +
         '<div style="padding: 5px 20px;">' +
         '<p style="position: relative; color: white; float: left; z-index: 999; background: orange; padding: 5px 30px; margin: -25px auto 0 ; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)">' +
-        '<span>' + currentComment.get('nick') +
+        '<span>Dear ' + parentComment.get('nick') +
         '</span>' +
         '</p>' +
         '<span><br / ></span>' +
         '<h3> <span > 您有一条来自' +
         '<a style="text-decoration: none;color: orange" target="_blank" href="' +
         process.env.SITE_URL +
-        '">' + parentComment.get('nick') + '</a>的回复</span>' +
+        '">' + currentComment.get('nick') + '</a>的回复</span>' +
         '</h3>' +
-        '<p style="font-size: 14px;">< span > 您在文章《' +
+        '<p style="font-size: 14px;"><span> 您在《' +
         process.env.SITE_NAME +
         '》上发表的评论：</span></p >' +
         '<div style="border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px 0px;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
         parentComment.get('comment') +
         '</div>' +
         '<p style="font-size: 14px;">' +
-        '<span>' + currentComment.get('nick') + '给您的回复如下：</span></p>' +
+        '<span>' + currentComment.get('nick') + ' 给您的回复如下：</span></p>' +
         '<div style="border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px 0px;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
         currentComment.get('comment') +
         '</div>' +
         '<p style="font-size: 14px;"><span><a style="text-decoration: none;color: orange" target="_blank" href="' +
         process.env.SITE_URL +
-        '">persilee\'s blog</a>双手呈上~</span ></p>' +
+        '">persilee\'s blog</a> 双手呈上~</span ></p>' +
         '<div style="text-align: center;"><span><img src="https://i.loli.net/2018/03/19/5aafd2e0ae335.png" alt="hr" style="max-height:30px;margin:5px auto 5px auto;display: block;"/><a style="text-transform: uppercase; text-decoration: none; font-size: 14px; border: 2px solid #6c7575; color: #2f3333; padding: 10px; display: inline-block; margin: 10px auto 0;"target="_blank" href="' +
         process.env.SITE_URL + currentComment.get('url') +
         '">点击查看回复的完整內容</a></span></div>' +
