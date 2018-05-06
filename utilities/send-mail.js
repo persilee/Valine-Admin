@@ -12,10 +12,10 @@ const transporter = nodemailer.createTransport({
 
 exports.notice = (comment) => {
     let emailSubject = '👉 咚！「' + process.env.SITE_NAME + '」上有新评论了';
-    let emailContent = '<div style="background: white; width: 80%; margin: auto auto; border-radius: 5px; border:#87daff 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
+    let emailContent = '<div style="background: white; width: 80%; max-width:740px; margin: auto auto; border-radius: 5px; border:#87daff 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
         '<span>' +
         '<a href="#">' +
-        '<img style="max-width:120%;z-index: 666;" src="https://view.moezx.cc/images/2018/04/28/girl.png" />' +
+        '<img height="auto" style="width:100%;max-width:120%;z-index: 666;" src="https://view.moezx.cc/images/2018/05/07/boy.png />' +
         '</a>' +
         '</span>' +
         '<div style="padding: 5px 20px;">' +
@@ -60,10 +60,10 @@ exports.notice = (comment) => {
 
 exports.send = (currentComment, parentComment) => {
     let emailSubject = '👉 叮咚！[' + process.env.SITE_NAME + '] 上的留言有了回应';
-    let emailContent = '<div style="background: white; width: 80%; margin: auto auto; border-radius: 5px; border:#87daff 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
+    let emailContent = '<div style="background: white; width: 80%; max-width:740px; margin: auto auto; border-radius: 5px; border:#87daff 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
         '<span>' +
         '<a href="#">' +
-        '<img style="max-width:120%;z-index: 666;" src="https://view.moezx.cc/images/2018/04/28/boy.jpg" />' +
+        '<img height="auto" style="width:100%;max-width:120%;z-index: 666;" src="https://view.moezx.cc/images/2018/05/07/boy.png" />' +
         '</a>' +
         '</span>' +
         '<div style="padding: 5px 20px;">' +
