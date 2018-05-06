@@ -15,7 +15,7 @@ exports.notice = (comment) => {
     let emailContent = '<div style="background: white; width: 80%; max-width:740px; margin: auto auto; border-radius: 5px; border:#87daff 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
         '<span>' +
         '<a href="#">' +
-        '<img height="auto" style="width:100%;max-width:120%;z-index: 666;" src="https://lishaoy.net/images/boy.png"/>' +
+        '<img height="auto" style="width:130%;max-width:740px;z-index: 666;" src="https://lishaoy.net/images/boy.png"/>' +
         '</a>' +
         '</span>' +
         '<div style="padding: 5px 20px;">' +
@@ -63,7 +63,7 @@ exports.send = (currentComment, parentComment) => {
     let emailContent = '<div style="background: white; width: 80%; max-width:740px; margin: auto auto; border-radius: 5px; border:#87daff 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
         '<span>' +
         '<a href="#">' +
-        '<img height="auto" style="width:100%;max-width:120%;z-index: 666;" src="https://lishaoy.net/images/boy.png" />' +
+        '<img height="auto" style="width:130%;max-width:740px;z-index: 666;" src="https://lishaoy.net/images/boy.png" />' +
         '</a>' +
         '</span>' +
         '<div style="padding: 5px 20px;">' +
