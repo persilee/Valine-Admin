@@ -50,7 +50,7 @@ exports.send = (currentComment, parentComment) => {
     let emailContent = '<div style="background: white; width: 80%; margin: auto auto; border-radius: 5px; border:orange 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
         '<span>' +
         '<a href="#">' +
-        '<img style="width:100%;z-index: 666;" src="https://lishaoy.net/images/boy.jpg" />' +
+        '<img style="width:100%;z-index: 666;" src="https://h.lishaoy.net/images/boy.jpg" />' +
         '</a>' +
         '</span>' +
         '<div style="padding: 5px 20px;">' +
