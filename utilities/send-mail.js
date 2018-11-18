@@ -38,7 +38,7 @@ exports.notice = (comment) => {
         '<p style="font-size: 14px;"><span><a style="text-decoration: none;color: #87daff" target="_blank" href="' +
         process.env.SITE_URL +
         '">persilee\'s blog</a> 双手呈上~</span ></p>' +
-        '<div style="text-align: center;"><span><img src="https://i.loli.net/2018/03/19/5aafd2e0ae335.png" alt="hr" style="width:100%;max-height:30px;margin:5px auto 5px auto;display: block;"/><a style="text-transform: uppercase; text-decoration: none; font-size: 14px; border: 2px solid #6c7575; color: #2f3333; padding: 10px; display: inline-block; margin: 10px auto 0;"target="_blank" href="' +
+        '<div style="text-align: center;"><span><img src="https://cdn.lishaoy.net/images/mail-bottom.png" alt="hr" style="width:100%;max-height:30px;margin:5px auto 5px auto;display: block;"/><a style="text-transform: uppercase; text-decoration: none; font-size: 14px; border: 2px solid #6c7575; color: #2f3333; padding: 10px; display: inline-block; margin: 10px auto 0;"target="_blank" href="' +
         process.env.SITE_URL + comment.get('url') +
         '">点击查看回复的完整內容</a></span></div>' +
         '<p style="font-size: 14px;text-align: center;"><span>本邮件为系统自动发出，请勿直接回复</span></p><p style="font-size: 12px;text-align: center;color: #999;"><span>Copyright © persilee\'s blog</span></p>' +
@@ -91,7 +91,7 @@ exports.send = (currentComment, parentComment) => {
         '<p style="font-size: 14px;"><span><a style="text-decoration: none;color: #87daff" target="_blank" href="' +
         process.env.SITE_URL +
         '">persilee\'s blog</a> 双手呈上~</span ></p>' +
-        '<div style="text-align: center;"><span><img src="https://i.loli.net/2018/03/19/5aafd2e0ae335.png" alt="hr" style="width:100%;max-height:30px;margin:5px auto 5px auto;display: block;"/><a style="text-transform: uppercase; text-decoration: none; font-size: 14px; border: 2px solid #6c7575; color: #2f3333; padding: 10px; display: inline-block; margin: 10px auto 0;"target="_blank" href="' +
+        '<div style="text-align: center;"><span><img src="https://cdn.lishaoy.net/images/mail-bottom.png" alt="hr" style="width:100%;max-height:30px;margin:5px auto 5px auto;display: block;"/><a style="text-transform: uppercase; text-decoration: none; font-size: 14px; border: 2px solid #6c7575; color: #2f3333; padding: 10px; display: inline-block; margin: 10px auto 0;"target="_blank" href="' +
         process.env.SITE_URL + currentComment.get('url') +
         '">点击查看回复的完整內容</a></span></div>' +
         '<p style="font-size: 14px;text-align: center;"><span>本邮件为系统自动发出，请勿直接回复</span></p><p style="font-size: 12px;text-align: center;color: #999;"><span>Copyright © persilee\'s blog</span></p>' +
