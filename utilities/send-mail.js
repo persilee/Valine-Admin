@@ -12,17 +12,15 @@ const transporter = nodemailer.createTransport({
 
 exports.notice = (comment) => {
     let emailSubject = '👉 咚！「' + process.env.SITE_NAME + '」上有新评论了';
-    let emailContent = '<div style="background: white; width: 80%; max-width:740px; margin: auto auto; border-radius: 5px; border:#87daff 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
-        '<span>' +
+    let emailContent = '<div style="background: white; max-width:740px; margin: auto auto; border-radius: 5px; border:#87daff 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
         '<a href="#">' +
         '<img height="auto" style="width:140%;max-width:740px;z-index: 666;" src="https://cdn.lishaoy.net/images/boy.png"/>' +
         '</a>' +
-        '</span>' +
         '<div style="padding: 5px 20px;">' +
-        '<p style="position: relative; color: white; float: left; z-index: 999; background: #87daff; padding: 5px 30px; margin: -25px auto 0 ; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)">' +
+        '<div style="position: relative; color: white; float: left; z-index: 999; background: #87daff; padding: 5px 30px; margin: -25px auto 0 ; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)">' +
         '<span>Dear Persilee'  +
         '</span>' +
-        '</p>' +
+        '</div>' +
         '<span><br / ></span>' +
         '<h3> <span > 您有一条来自' +
         '<a style="text-decoration: none;color: #87daff" target="_blank" href="' +
@@ -60,17 +58,15 @@ exports.notice = (comment) => {
 
 exports.send = (currentComment, parentComment) => {
     let emailSubject = '👉 叮咚！[' + process.env.SITE_NAME + '] 上的留言有了回应';
-    let emailContent = '<div style="background: white; width: 80%; max-width:740px; margin: auto auto; border-radius: 5px; border:#87daff 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
-        '<span>' +
+    let emailContent = '<div style="background: white; max-width:740px; margin: auto auto; border-radius: 5px; border:#87daff 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
         '<a href="#">' +
         '<img height="auto" style="width:140%;max-width:740px;z-index: 666;" src="https://cdn.lishaoy.net/images/boy.png" />' +
         '</a>' +
-        '</span>' +
         '<div style="padding: 5px 20px;">' +
-        '<p style="position: relative; color: white; float: left; z-index: 999; background: #87daff; padding: 5px 30px; margin: -25px auto 0 ; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)">' +
+        '<div style="position: relative; color: white; float: left; z-index: 999; background: #87daff; padding: 5px 30px; margin: -25px auto 0 ; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)">' +
         '<span>Dear ' + parentComment.get('nick') +
         '</span>' +
-        '</p>' +
+        '</div>' +
         '<span><br / ></span>' +
         '<h3> <span > 您有一条来自' +
         '<a style="text-decoration: none;color: #87daff" target="_blank" href="' +
