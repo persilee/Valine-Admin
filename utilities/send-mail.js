@@ -31,7 +31,7 @@ exports.notice = (comment) => {
         process.env.SITE_NAME +
         '》上发表的评论：</span></p >' +
         '<center>' +
-        '<div style="text-align:left;margin:6px auto;border-left:#FF5722 3px solid;padding:10px;background: linear-gradient(to right, rgba(0, 150, 136, 0.36) 0%, rgba(0, 150, 136, 0) 80%);">' +
+        '<div style="text-align:left;margin:6px auto;padding:10px;background: linear-gradient(to right, rgba(221, 221, 221, 0.36) 0%, rgba(221, 221, 221, 0) 90%);">' +
         comment.get('comment') +
         '</div>' +
         '</center>' +
@@ -79,14 +79,14 @@ exports.send = (currentComment, parentComment) => {
         process.env.SITE_NAME +
         '》上发表的评论：</span></p >' +
         '<center>' +
-        '<div style="text-align:left;margin:6px auto;border-left:#FF5722 3px solid;padding:10px;background: linear-gradient(to right, rgba(0, 150, 136, 0.36) 0%, rgba(0, 150, 136, 0) 80%);">' +
+        '<div style="text-align:left;margin:6px auto;padding:10px;background: linear-gradient(to right, rgba(221, 221, 221, 0.36) 0%, rgba(221, 221, 221, 0) 90%);">' +
         parentComment.get('comment') +
         '</div>' +
         '</center>' +
         '<p style="font-size: 14px;">' +
         '<span>' + currentComment.get('nick') + ' 给您的回复如下：</span></p>' +
         '<center>' +
-        '<div style="text-align:left;margin:6px auto;border-left:#FF5722 3px solid;padding:10px;background: linear-gradient(to right, rgba(0, 150, 136, 0.36) 0%, rgba(0, 150, 136, 0) 80%);">' +
+        '<div style="text-align:left;margin:6px auto;padding:10px;background: linear-gradient(to right, rgba(221, 221, 221, 0.36) 0%, rgba(221, 221, 221, 0) 90%);">' +
         currentComment.get('comment') +
         '</div>' +
         '</center>' +
