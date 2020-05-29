@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 
 exports.notice = (comment) => {
     let emailSubject = '👉 咚！「' + process.env.SITE_NAME + '」上有新评论了';
-    let emailContent = '<center>' +
+    let emailContent =
     '<div style="background: white; width:100%; max-width:740px; margin: 10px auto; border-radius: 5px; border:#FF5722 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
         '<a href="#">' +
         '<img height="auto" style="width:120%;max-width:740px;z-index: 666;" src="https://cdn.lishaoy.net/images/boy.png"/>' +
@@ -31,7 +31,7 @@ exports.notice = (comment) => {
         process.env.SITE_NAME +
         '》上发表的评论：</span></p >' +
         '<center>' +
-        '<div style="text-align:left;margin:6px auto;border-left:#ff5722 3px solid;padding:10px;">' +
+        '<div style="text-align:left;margin:6px auto;border-left:#FF5722 3px solid;padding:10px;background: linear-gradient(to right, rgba(0, 150, 136, 0.36) 0%, rgba(0, 150, 136, 0) 80%);">' +
         comment.get('comment') +
         '</div>' +
         '</center>' +
@@ -42,8 +42,7 @@ exports.notice = (comment) => {
         process.env.SITE_URL + comment.get('url') +
         '">点击查看回复的完整內容</a></span></div>' +
         '<p style="font-size: 14px;text-align: center;"><span>本邮件为系统自动发出，请勿直接回复</span></p><p style="font-size: 12px;text-align: center;color: #999;"><span>Copyright © persilee\'s blog</span></p>' +
-        '</div></div>' +
-        '</center>';
+        '</div></div>';
 
     let mailOptions = {
         from: '"' + process.env.SENDER_NAME + '" <' + process.env.SENDER_EMAIL + '>',
@@ -61,7 +60,7 @@ exports.notice = (comment) => {
 
 exports.send = (currentComment, parentComment) => {
     let emailSubject = '👉 叮咚！[' + process.env.SITE_NAME + '] 上的留言有了回应';
-    let emailContent = '<center>' +
+    let emailContent = 
     '<div style="background: white; width:100%; max-width:740px; margin: 10px auto; border-radius: 5px; border:#FF5722 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
         '<a href="#">' +
         '<img height="auto" style="width:120%;max-width:740px;z-index: 666;" src="https://cdn.lishaoy.net/images/boy.png" />' +
@@ -80,14 +79,14 @@ exports.send = (currentComment, parentComment) => {
         process.env.SITE_NAME +
         '》上发表的评论：</span></p >' +
         '<center>' +
-        '<div style="text-align:left;margin:6px auto;border-left:#ff5722 3px solid;padding:10px;">' +
+        '<div style="text-align:left;margin:6px auto;border-left:#FF5722 3px solid;padding:10px;background: linear-gradient(to right, rgba(0, 150, 136, 0.36) 0%, rgba(0, 150, 136, 0) 80%);">' +
         parentComment.get('comment') +
         '</div>' +
         '</center>' +
         '<p style="font-size: 14px;">' +
         '<span>' + currentComment.get('nick') + ' 给您的回复如下：</span></p>' +
         '<center>' +
-        '<div style="text-align:left;margin:6px auto;border-left:#ff5722 3px solid;padding:10px;">' +
+        '<div style="text-align:left;margin:6px auto;border-left:#FF5722 3px solid;padding:10px;background: linear-gradient(to right, rgba(0, 150, 136, 0.36) 0%, rgba(0, 150, 136, 0) 80%);">' +
         currentComment.get('comment') +
         '</div>' +
         '</center>' +
@@ -98,8 +97,7 @@ exports.send = (currentComment, parentComment) => {
         process.env.SITE_URL + currentComment.get('url') +
         '">点击查看回复的完整內容</a></span></div>' +
         '<p style="font-size: 14px;text-align: center;"><span>本邮件为系统自动发出，请勿直接回复</span></p><p style="font-size: 12px;text-align: center;color: #999;"><span>Copyright © persilee\'s blog</span></p>' +
-        '</div></div>' +
-        '</center>';
+        '</div></div>';
 
     let mailOptions = {
         from: '"' + process.env.SENDER_NAME + '" <' + process.env.SENDER_EMAIL + '>', // sender address
