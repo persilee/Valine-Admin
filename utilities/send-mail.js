@@ -30,9 +30,9 @@ exports.notice = (comment) => {
         process.env.SITE_NAME +
         '》上发表的评论：</span></p >' +
         '<center>' +
-        '<a style="width:90%;text-align:left;border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px auto;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
+        '<div style="display:inline-block;width:90%;text-align:left;border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px auto;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
         comment.get('comment') +
-        '</a>' +
+        '</div>' +
         '</center>' +
         '<p style="font-size: 14px;"><span><a style="text-decoration: none;color: #FF5722" target="_blank" href="' +
         process.env.SITE_URL +
@@ -77,15 +77,17 @@ exports.send = (currentComment, parentComment) => {
         process.env.SITE_NAME +
         '》上发表的评论：</span></p >' +
         '<center>' +
-        '<a style="text-align:left;border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px 0px;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
+        '<div style="display:inline-block;width:90%;text-align:left;border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px 0px;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
         parentComment.get('comment') +
-        '</a>' +
+        '</div>' +
         '</center>' +
         '<p style="font-size: 14px;">' +
         '<span>' + currentComment.get('nick') + ' 给您的回复如下：</span></p>' +
-        '<div style="border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px auto;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
+        '<center>' +
+        '<div style="display:inline-block;width:90%;border-bottom:#ddd 1px solid;border-left:#ddd 1px solid;padding-bottom:20px;background-color:#eee;margin:15px auto;padding-left:20px;padding-right:20px;border-top:#ddd 1px solid;border-right:#ddd 1px solid;padding-top:20px">' +
         currentComment.get('comment') +
         '</div>' +
+        '</center>' +
         '<p style="font-size: 14px;"><span><a style="text-decoration: none;color: #FF5722" target="_blank" href="' +
         process.env.SITE_URL +
         '">persilee\'s blog</a> 双手呈上~</span ></p>' +
