@@ -13,9 +13,9 @@ const transporter = nodemailer.createTransport({
 exports.notice = (comment) => {
     let emailSubject = '👉 咚！「' + process.env.SITE_NAME + '」上有新评论了';
     let emailContent =
-    '<div style="background: white; width:100%; max-width:740px; margin: 10px auto; border-radius: 5px; border:#FF5722 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
+    '<div style="background: white; width:100%; max-width:740px; margin: auto; border-radius: 5px; border:#FF5722 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
         '<a href="#">' +
-        '<img height="auto" style="width:100%;max-width:740px;z-index: 666;object-fit: cover;" src="https://cdn.lishaoy.net/images/boy.png"/>' +
+        '<img height="auto" style="width:100%;max-width:740px;z-index: 666;object-fit: cover;border-radius: 5px;" src="https://cdn.lishaoy.net/images/boy.png"/>' +
         '</a>' +
         '<div style="padding: 5px 20px;">' +
         '<a style="position: relative; color: white; float: left; z-index: 999; background: #FF5722; padding: 5px 30px; margin: -25px auto; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)">' +
@@ -61,9 +61,9 @@ exports.notice = (comment) => {
 exports.send = (currentComment, parentComment) => {
     let emailSubject = '👉 叮咚！[' + process.env.SITE_NAME + '] 上的留言有了回应';
     let emailContent = 
-    '<div style="background: white; width:100%; max-width:740px; margin: 10px auto; border-radius: 5px; border:#FF5722 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
+    '<div style="background: white; width:100%; max-width:740px; margin: auto; border-radius: 5px; border:#FF5722 1px solid; overflow: hidden; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);">' +
         '<a href="#">' +
-        '<img height="auto" style="width:100%;max-width:740px;z-index: 666;object-fit: cover;" src="https://cdn.lishaoy.net/images/boy.png" />' +
+        '<img height="auto" style="width:100%;max-width:740px;z-index: 666;object-fit: cover;border-radius: 5px;" src="https://cdn.lishaoy.net/images/boy.png" />' +
         '</a>' +
         '<div style="padding: 5px 20px;">' +
         '<a style="position: relative; color: white; float: left; z-index: 999; background: #FF5722; padding: 5px 30px; margin: -25px auto 0 ; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.30)">' +
